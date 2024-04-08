@@ -1,0 +1,40 @@
+{
+    "hed1":"Animals to see in wilpattu",
+    "hed2":"purple faced leaf monkey",
+    "p1":"The Sri Lankan purple-faced leaf monkey, endemic to Sri Lanka, is distinguished by its vibrant purple fur on the face and a white beard. This endangered primate species primarily inhabits the island's montane forests, emphasizing the importance of conservation efforts to protect its unique habitat and ensure its survival.",
+    "hed3":"Jungle  cat",
+    "p2":"The Sri Lankan jungle cat, also known as Felis chaus kelaarti, is characterized by its unique appearance, with a slender body, short reddish-brown fur, and distinct white underparts. This small wild cat species is adapted to Sri Lanka's diverse habitats, including jungles and grasslands, making it a fascinating and essential component of the island's biodiversity.        ",
+    "hed4":"grey slender loris",
+    "p3":"The Sri Lankan gray slender loris, scientifically known as Loris lydekkerianus nordicus, is a nocturnal primate characterized by its large eyes and slender physique. Endemic to Sri Lanka, this elusive species faces threats from habitat loss and hunting, making conservation efforts crucial for its survival.",
+    "hed5":"Birds",
+    "hed6":"Crested Serpent Eagle",
+    "CrestedSerpentEagle":[
+        "Scientific name: Spilornis cheela",
+        "Lifespan: Up to 50 years",
+        "These birds are diurnal (active during the day)",
+        "The crested eagle can fly at speeds of up to 100 mph"
+
+    ],
+    "hed7":"Lesser Adjutant",
+    "lesserAdjutant":[
+        "Scientific name: Leptoptilos javanicus",
+        "Lifespan: Up to 30-40 years",
+        "Diet : Reptiles, fish, frogs and large inverebrates"
+    ],
+    "hed8":"Malabar pied hornbill",
+    "malabarPiedHornbill":[
+        "Scientific name: Anthracoceros coronatus",
+        "Lifespan: Up to 35-40 years",
+        "Diet : mainly on fruits; figs are a favourite",
+        "The Malabar pied hornbill can fly up to 18 miles an hour"
+    ],
+    "hed9":"Safari Adventures",
+    "p4":"Embarking on a safari in Yala National Park is an adventure into the heart of Sri Lanka's untamed wilderness. As one of the premier wildlife destinations in the country, Yala offers an immersive safari experience, providing glimpses of its iconic residents, including the elusive leopard, majestic elephants, and a plethora of exotic bird species. The park's diverse landscapes, ranging from dense forests to open grasslands and serene coastal areas, create an ever-changing backdrop for safari enthusiasts. Knowledgeable guides navigate the rugged terrain, enhancing the chances of spotting wildlife and sharing fascinating insights into the park's ecology. Yala's allure lies not only in its captivating fauna but also in the thrill of encountering these creatures in their natural habitat, making each safari an unforgettable journey into the heart of Sri Lanka's wild beauty.        ",
+    "hed10":"conservation",
+    "p5":"Wilpattu Conservation is vital for safeguarding Sri Lanka's unique biodiversity. The Wilpattu National Park, spanning over 1,300 square kilometers, serves as a haven for numerous endangered species, including the Sri Lankan leopard. The conservation efforts focus on preserving the park's diverse ecosystems, such as its lush dry-zone forests and pristine lakes, ensuring the sustainability of the region's flora and fauna. Collaborative initiatives involving local communities and authorities play a crucial role in maintaining the delicate balance of Wilpattu's natural heritage.    "
+
+
+    
+
+
+}

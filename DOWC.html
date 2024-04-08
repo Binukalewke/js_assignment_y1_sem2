@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Department of Wildlife Conservation</title>
+  <link rel="stylesheet" href="DOWC.css">
+  <link rel="manifest" href="./manifest/manifest.json">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <script src="//unpkg.com/alpinejs" defer></script>
+</head>
+<body>
+<section x-data="dowc">
+  <header>
+    <img src="./dowcimg/dwlc.png" class="himage">
+  </header>
+
+  <nav>
+    <a href="index.html">
+      <img src="./dowcimg/logo.webp" class="logo">
+  </a>
+    <section class="dropdown">
+      <button class="dropbtn">
+          <a href="index.html">Home</a>
+          </button>
+      <section class="dropdown-content">
+          <a href="SL wildlife.html">SriLankan wildlife</a>
+          <a href="DOWC.html">DOWC</a>
+          <a href="SL lepord.html">SriLankan lepord</a>
+          <a href="animals.html">SriLankan Animals</a>
+      </section>
+  </section>
+  
+      <section class="dropdown">
+          <button class="dropbtn">
+              <a href="animals.html">SriLankan Animals</a>
+              </button>
+          <section class="dropdown-content">
+              <a href="Yala.html">yala</a>
+              <a href="willpattu.html">wilpattu</a>
+          </section>
+      </section>
+
+      <a href="about.html">About</a>
+      <a href="login.html">Log in</a>
+      <a href="signup.html">Sign Up</a>
+ 
+ 
+
+    
+    
+ </nav>
+
+
+  <main>
+    <section class="department-intro">
+      <h2 x-text="int"></h2>
+      <p x-text="p1"></p>
+    </section>
+
+    <h1 x-text="pa"></h1>
+    
+   
+    <h2 class="moving-h2" x-text="pa1"></h2>
+      
+    
+    
+    <section class="gallery">
+   
+      <section class="gallery-item">
+        <img src="./dowcimg/trinconamadu.jpg" alt="Trinconamadu National Park">
+      </section>
+      <section class="gallery-item">
+        <img src="./dowcimg/trinconamadu2.jpg" alt="Trinconamadu national park">
+      </section>
+      <section class="gallery-item">
+        <img src="./dowcimg/trinconamadu3.jpg" alt="Trinconamadu national park">
+      </section>
+      <p x-text="p2"></p>
+      <button class="button"><span><a href="https://www.ceylonexpeditions.com/minneriya-national-park-sri-lanka">More info</a> </span></button>
+
+    </section>
+
+    
+  
+  <h2 class="moving-h2" x-text="pa2"></h2>
+      
+  
+  <section class="gallery">
+    <section class="gallery-item">
+      <img src="./dowcimg/gal-oya02.jpg" alt="Gal Oya National Park">
+    </section>
+    <section class="gallery-item">
+      <img src="./dowcimg/gal-oya03.jpg" alt="Galoya National Park">
+    </section>
+    <section class="gallery-item">
+      <img src="./dowcimg/gal-oya04.jpg" alt="Galoya National Park">
+    </section>
+    <p x-text="p3"></p>
+    <button class="button"><span><a href="https://lk.lakpura.com/pages/gal-oya-national-park">More info</a> </span></button>
+  
+  </section>
+  
+  
+  <h2 class="moving-h2" x-text="pa3"></h2>
+   
+
+  <section class="gallery">
+   
+      <section class="gallery-item">
+        <img src="./dowcimg/Hikkaduwacoral1.jpg" alt="Hikkaduwa Coral Sanctuary">
+      </section>
+      <section class="gallery-item">
+        <img src="./dowcimg/Hikkaduwacoral2.jpg" alt="Hikkaduwa Coral Sanctuary">
+      </section>
+      <section class="gallery-item">
+        <img src="./dowcimg/Hikkaduwacoral3.jpg" alt="Hikkaduwa Coral Sanctuary">
+      </section>
+    <p x-text="p4"></p>
+    <button class="button"><span><a href="https://lk.lakpura.com/pages/gal-oya-national-park">More info</a> </span></button>
+  </section>
+      
+
+  <section class="container">
+    <section class="column">
+        <h2>sanctuaries</h2>
+        
+        <ul style="list-style-type:square;">
+          <template x-for="sanc in sanctuaries">
+            <li x-text="sanc"></li>
+          </template>
+        </ul>
+    </section>
+    <section class="column">
+        <h2>Nature reserves</h2>
+        <ul style="list-style-type:square;">
+          <template x-for="nature in natureReserves">
+            <li x-text="nature"></li>
+          </template>
+        </ul>
+    </section>
+    <section class="column">
+        <h3>National parks</h2>
+        <ul style="list-style-type:square;">
+            <template x-for="parks in nationalParks">
+              <li x-text="parks"></li>
+            </template>
+        </ul>
+    </section>
+  </section>
+  </section>  
+
+
+
+  
+      <h2><a href="https://www.dwc.gov.lk/protected-areas/" class="other" class="c" >More Protected Areas</a></h2>
+    <br>
+    <br>
+    <section id="map-container">
+      <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.945747289865!2d79.91723077499626!3d6.89709269310211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae250aa85489b1f%3A0xd8773339b6b43dbb!2sDepartment%20of%20Wildlife%20Conservation!5e0!3m2!1sen!2slk!4v1704869516808!5m2!1sen!2slk"  style="border:0;"  referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <section class="footer-container">
+      <section class="footer-social">
+        <ul class="social-icons">
+          <li><a href="#" target="_blank"><i class="fab fa-facebook"></i></a></li>
+          <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+      </section>
+      <section class="footer-links">
+        <ul class="footer-menu">
+          <li><a href="./index.html">Home</a></li>
+            <li><a href="./SL wildlife.html">SriLankan Wildlife</a></li>
+            <li><a href="./animals.html">SriLankan Animals</a></li>
+            <li><a href="./SL lepord.html">SriLankan Leopard</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./login.html">Log in</a></li>
+            <li><a href="./signup.html">Sign Up</a></li>
+        </ul>
+      </section>
+      <section class="footer-subscribe">
+        <input type="email" class="email-input" id="subscriberEmail" placeholder="Enter your email">
+        <button class="subscribe-button" onclick="subscribe()">Subscribe</button>
+      </section>
+    </section>
+    <p>&copy; 2024 Ceylone Wildlife. All rights reserved.</p>
+  </footer>
+</section>
+<script>
+  const dowc={
+    int:'',
+    p1:'',
+    pa:'',
+    pa1:'',
+    p2:'',
+    pa2:'',
+    p3:'',
+    pa3:'',
+    p4:'',
+    sanctuaries:'',
+    natureReserves:'',
+    nationalParks:''
+
+
+  };
+
+  fetch('dowc.json')
+    .then(response=>response.json())
+    .then(data=>{
+
+      dowc.int = data.int
+      dowc.p1 = data.p1
+      dowc.pa = data.pa
+      dowc.pa1 = data.pa1
+      dowc.p2 = data.p2
+      dowc.pa2 = data.pa2
+      dowc.p3 = data.p3
+      dowc.pa3 = data.pa3
+      dowc.p4 = data.p4
+      dowc.sanctuaries = data.sanctuaries
+      dowc.natureReserves = data.natureReserves
+      dowc.nationalParks = data.nationalParks
+
+
+      localStorage.setItem('dowcData', JSON.stringify(dowc));
+    })
+
+  .catch(error => console.error('Error fetching data:', error));
+
+  function subscribe() {
+            const email = document.getElementById("subscriberEmail").value;
+            if (validateEmail(email)) {
+                let subscribedUsers = JSON.parse(localStorage.getItem('subscribedUsers')) || [];
+                subscribedUsers.push(email);   
+                localStorage.setItem('subscribedUsers', JSON.stringify(subscribedUsers));
+                alert("Subscription successful!");
+                document.getElementById("subscriberEmail").value = ""; 
+            } else {
+                alert("Please enter a valid email address!");
+            }
+            }
+            
+            function validateEmail(email) {
+            const re = /\S+@\S+\.\S+/;
+            return re.test(email);
+            }
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="about.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="manifest" href="./manifest/manifest.json">
+  <script src="//unpkg.com/alpinejs" defer></script>
+  <title>About Us</title>
+
+</head>
+
+<body>
+  <section x-data="about">
+    <header>
+      <h1>About Us</h1>
+    </header>
+
+    <nav>
+      <a href="index.html">
+        <img src="./indeximg/logo.webp" class="logo">
+      </a>
+      <section class="dropdown">
+        <button class="dropbtn">
+          <a href="index.html">Home</a>
+        </button>
+        <section class="dropdown-content">
+          <a href="SL wildlife.html">SriLankan wildlife</a>
+          <a href="DOWC.html">DOWC</a>
+          <a href="SL lepord.html">SriLankan lepord</a>
+          <a href="animals.html">SriLankan Animals</a>
+        </section>
+      </section>
+      <section class="dropdown">
+        <button class="dropbtn">
+          <a href="animals.html">SriLankan Animals</a>
+        </button>
+        <section class="dropdown-content">
+          <a href="Yala.html">yala</a>
+          <a href="willpattu.html">wilpattu</a>
+        </section>
+      </section>
+      <a href="about.html">About</a>
+      <a href="login.html">Log in</a>
+      <a href="signup.html">Sign Up</a>
+    </nav>
+
+    <main>
+      <section>
+        <h2 x-text="hed1"></h2>
+        <p x-text="p1"></p>
+        <p x-text="p2"></p>
+      </section>
+
+      <section>
+        <h2 x-text="hed2"></h2>
+        <p x-text="p3"></p>
+        <p x-text="p4"></p>
+      </section>
+
+      <section>
+        <h2 x-text="hed3"></h2>
+        <p>Email:CeyloneWildlife@gamail.com<br>
+          Phone:0773077755<br>
+          Address: 77/A Hillcountry Road, Kandy, Srilanka</p>
+      </section>
+    </main>
+
+    <section id="map-container">
+      <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.945747289865!2d79.91723077499626!3d6.89709269310211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae250aa85489b1f%3A0xd8773339b6b43dbb!2sDepartment%20of%20Wildlife%20Conservation!5e0!3m2!1sen!2slk!4v1704869516808!5m2!1sen!2slk"  style="border:0;"  referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <br>
+
+    <footer class="footer">
+      <section class="footer-container">
+        <section class="footer-social">
+          <ul class="social-icons">
+            <li><a href="#" target="_blank"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+          </ul>
+        </section>
+        <section class="footer-links">
+          <ul class="footer-menu">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./SL wildlife.html">SriLankan Wildlife</a></li>
+            <li><a href="./animals.html">SriLankan Animals</a></li>
+            <li><a href="./SL lepord.html">SriLankan Leopard</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./login.html">Log in</a></li>
+            <li><a href="./signup.html">Sign Up</a></li>
+          </ul>
+        </section>
+        <section class="footer-subscribe">
+          <input type="email" class="email-input" id="subscriberEmail" placeholder="Enter your email">
+          <button class="subscribe-button" onclick="subscribe()">Subscribe</button>
+        </section>
+      </section>
+      <p>&copy; 2024 Ceylone Wildlife. All rights reserved.</p>
+    </footer>
+  </section>
+
+  <script>
+    const about = {
+      hed1: '',
+      p1: '',
+      p2: '',
+      hed2: '',
+      p3: '',
+      p4: '',
+      hed3: ''
+    }
+
+    fetch('about.json')
+      .then(response => response.json())
+      .then(data => {
+        about.hed1 = data.hed1
+        about.p1 = data.p1
+        about.p2 = data.p2
+        about.hed2 = data.hed2
+        about.p3 = data.p3
+        about.p4 = data.p4
+        about.hed3 = data.hed3
+
+        localStorage.setItem('aboutData', JSON.stringify(about));
+      })
+
+   
+    function subscribe() {
+      const email = document.getElementById("subscriberEmail").value;
+      if (validateEmail(email)) {
+        let subscribedUsers = JSON.parse(localStorage.getItem('subscribedUsers')) || []; 
+        subscribedUsers.push(email); 
+        localStorage.setItem('subscribedUsers', JSON.stringify(subscribedUsers)); 
+        alert("Subscription successful!");
+        document.getElementById("subscriberEmail").value = ""; 
+      } else {
+        alert("Please enter a valid email address!");
+      }
+    }
+    
+    function validateEmail(email) {
+      const re = /\S+@\S+\.\S+/;
+      return re.test(email);
+    }
+  </script>
+</body>
+
+</html>

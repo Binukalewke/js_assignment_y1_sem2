@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="./admin.css">
+    <style>
+    
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <a href="index2.html"><img src="./indeximg/logo.webp" alt="Logo" class="logo" href="./index2.html"></a> 
+        <br>
+
+        <h1>Welcome Admin</h1>
+
+        <h2>Logged-in Users</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th>Password</th>
+                </tr>
+            </thead>
+            <tbody id="loggedInUsersTable"></tbody>
+        </table>
+
+        <h2>Subscribed Emails</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody id="subscribedEmailsTable"></tbody>
+        </table>
+    </div>
+
+    <script>
+       const loggedInUsers = JSON.parse(localStorage.getItem('users')) || [];
+
+        
+        const loggedInUsersTable = document.getElementById('loggedInUsersTable');
+        loggedInUsers.forEach(user => {
+            const row = document.createElement('tr');
+            row.innerHTML = `
+                <td>${user.username}</td>
+                <td>${user.email}</td>
+                <td>${user.password}</td>
+            `;
+            loggedInUsersTable.appendChild(row);
+        });
+
+        const subscribedEmails = JSON.parse(localStorage.getItem('subscribedUsers')) || [];
+
+
+        const subscribedEmailsTable = document.getElementById('subscribedEmailsTable');
+        subscribedEmails.forEach(email => {
+            const row = document.createElement('tr');
+            row.innerHTML = `<td>${email}</td>`;
+            subscribedEmailsTable.appendChild(row);
+        });
+    </script>
+</body>
+</html>

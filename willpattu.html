@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wilpattu National Park</title>
+    <link rel="stylesheet" href="willpattu.css">
+    <link rel="manifest" href="./manifest/manifest.json">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="//unpkg.com/alpinejs" defer></script>
+
+</head>
+
+<body>
+  <section x-data="willpattu">
+      <header>
+          <h1>Wilpattu National Park</h1>
+      </header>
+
+      <nav>
+        <a href="index2.html">
+          <img src="./wilpattuimg/logo.webp" class="logo">
+        </a>
+        <section class="dropdown">
+          <button class="dropbtn">
+              <a href="index2.html">Home</a>
+              </button>
+          <section class="dropdown-content">
+              <a href="SL wildlife2.html">SriLankan wildlife</a>
+              <a href="DOWC2.html">DOWC</a>
+              <a href="SL lepord2.html">SriLankan lepord</a>
+              <a href="animals2.html">SriLankan Animals</a>
+          </section>
+      </section>
+      
+          <section class="dropdown">
+              <button class="dropbtn">
+                  <a href="animals2.html">SriLankan Animals</a>
+                  </button>
+              <section class="dropdown-content">
+                  <a href="Yala2.html">yala</a>
+                  <a href="willpattu2.html">wilpattu</a>
+              </section>
+          </section>
+    
+          <a href="about2.html">About</a>
+          <a href="index.html">Log Out</a>
+          
+    
+    
+    
+        
+        
+    </nav>
+
+      <section>
+          <img src="./wilpattuimg/wilpattumain.jpg" alt="Wilpattu Main Image" class="main-image">
+        
+      </section>
+      <h1 x-text="hed1"></h1>
+
+      <section class="section ">
+          <h2 x-text="hed2"></h2>
+          <img src="./wilpattuimg/wilpattupurple-faced-leaf-monkeyjpg.webp" alt="Wilpattu Image 1">
+          <p x-text="p1"></p>
+          <a href="https://neprimateconservancy.org/purple-faced-langur/" class="animated-link">more</a>
+      </section>
+
+      <section class="section">
+          <h2 x-text="hed3"></h2>
+          <img src="./wilpattuimg/wilpattujunglecat.jpg" alt="Wilpattu Image 2">
+          <p x-text="p2"></p>
+          <a href="https://neprimateconservancy.org/gray-slender-loris/" class="animated-link">more on cats</a>
+      </section>
+
+      <section class="section">
+          <h2 x-text="hed4"></h2>
+          <img src="./wilpattuimg/wilpattugreyslendernoris2.jpg" alt="Wilpattu Image 3">
+          <p x-text="p3"></p>
+          <a href="https://www.wildlifetourssrilanka.com/wildlife/wildlife-in-sri-lanka/small-feline-predators-of-sri-lanka.html/" class="animated-link">more</a>
+      </section>
+      <h1 x-text="hed5"></h1>
+
+      <h2 x-text="hed6"></h2>
+      
+      <section class="gallery section">
+          <section class="image-container">
+            <img src="./wilpattuimg/willpattu Crested Serpent Eagle 1.jpg" alt="Crested Serpent Eagle 1">
+          </section>
+          <section class="image-container">
+            <img src="./wilpattuimg/willpattu Crested Serpent Eagle 3.jpg" alt="Crested Serpent Eagle 2">
+          </section>
+          <section class="image-container">
+            <img src="./wilpattuimg/willpattu Crested Serpent Eagle 2.png" alt="Crested Serpent Eagle 3">
+          </section>
+          <section class="image-container">
+              <img src="./wilpattuimg/willpattu Crested Serpent Eagle 4.jpg" alt="Crested Serpent Eagle 3">
+            </section>
+        </section>
+        <ul class="section">
+          <template x-for="eagle in CrestedSerpentEagle">
+            <li x-text="eagle"></li>
+        </template>
+            
+        </ul>
+      
+      <h2 x-text="hed7"></h2>
+      <section class="gallery section">
+          <section class="image-container">
+            <img src="./wilpattuimg/wilpattulesser-adjutant1.jpg" alt="Lesser Adjutant 1">
+          </section>
+          <section class="image-container">
+            <img src="./wilpattuimg/wilpattulesser-adjutant2.jpg" alt="Lesser Adjutant 2">
+          </section>
+          <section class="image-container">
+            <img src="./wilpattuimg/wilpattulesser-adjutant3.jpg" alt="Lesser Adjutant 3">
+          </section>
+          <section class="image-container">
+              <img src="./wilpattuimg/wilpattulesser-adjutant4.png" alt="Lesser Adjutant 3">
+            </section>
+            
+      </section>
+      <ul class="section">
+        <template x-for="lesser in lesserAdjutant">
+          <li x-text="lesser"></li>
+        </template>
+          
+          
+      </ul>
+
+      <h2 x-text="hed8"></h2>
+      <section class="gallery section">
+          <section class="image-container">
+            <img src="./wilpattuimg/wilpattuMalabar Pied Hornbill1.webp" alt="Malabar pied hornbill 1">
+          </section>
+          <section class="image-container">
+            <img src="./wilpattuimg/wilpattuMalabar Pied Hornbill2.webp" alt="Malabar pied hornbill 2">
+          </section>
+          <section class="image-container">
+            <img src="./wilpattuimg/wilpattuMalabar Pied Hornbill3.jpg" alt="Malabar pied hornbill 3">
+          </section>
+          <section class="image-container">
+              <img src="./wilpattuimg/wilpattuMalabar Pied Hornbill4.png" alt="Malabar pied hornbill 4">
+            </section>
+      </section>
+      <ul class="section">
+        <template x-for="malabar in malabarPiedHornbill">
+          <li x-text="malabar"></li>
+        </template>
+          
+      </ul>
+
+      <section class="section">
+          <a href="https://www.wilpattu.com/about-willpattu-national-park.php">More animals to see in Wilpattu</a>
+      </section>
+
+      <h1 x-text="hed9"></h1>  
+  <section class="section">
+      <section class="container ">      
+          <section class="container">
+              <img src="./wilpattuimg/wilpattusafari.jpg" alt="Avatar" class="simage">
+              <section class="middle">
+                <a href="https://www.getyourguide.co.uk/s?cq_src=google_ads&cq_cmp=6656839818&cq_con=109993279150&cq_term=&cq_med=&cq_plac=&cq_net=g&cq_pos=&cq_plt=gp&campaign_id=6656839818&adgroup_id=109993279150&target_id=dsa-925997878296&loc_physical_ms=1009919&match_type=&ad_id=454416957995&keyword=&ad_position=&feed_item_id=&placement=&device=c&partner_id=CD951&gad_source=1&gclid=CjwKCAiAqY6tBhAtEiwAHeRopaA5iwqBNmmSzjUso_kPR7tjR0KxvFqaDplCgz3_cKSL3U8BFEQTjxoCs34QAvD_BwE&visitor-id=F5A75F23A0B747A4AD66BD0B1B6FBFE0&locale_autoredirect_optout=true&q=Wilpattu+National+Park&et=252937">
+                <section class="text">Book Now</section>
+                </a>  
+              </section>
+          </section>
+      </section>
+      <p x-text="p4"> <p></p></p>
+  </section>
+
+  <h1 x-text="hed10"></h1>
+  <section class="section">
+      
+      <img src="./wilpattuimg/wilpattuconservation.png" alt="conservation">
+      <p x-text="p5"></p>
+      <a href="https://www.dwc.gov.lk/wnp/management-plan/">more about conservation</a>
+  </section>
+
+  <section id="map-container">
+    <iframe id="map"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d252625.23675092007!2d79.85216321117606!3d8.375147091645562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afdac7787e4bc27%3A0xcdd9a0715dad187c!2sWilpattu%20National%20Park!5e0!3m2!1sen!2slk!4v1705568494112!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+  <br>
+  <br>
+
+  <footer class="footer">
+    <section class="footer-container">
+      <section class="footer-social">
+        <ul class="social-icons">
+          <li><a href="#" target="_blank"><i class="fab fa-facebook"></i></a></li>
+          <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+      </section>
+      <section class="footer-links">
+        <ul class="footer-menu">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./SL wildlife.html">SriLankan Wildlife</a></li>
+            <li><a href="./animals.html">SriLankan Animals</a></li>
+            <li><a href="./SL lepord.html">SriLankan Leopard</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./login.html">Log in</a></li>
+            <li><a href="./signup.html">Sign Up</a></li>
+        </ul>
+      </section>
+      <section class="footer-subscribe">
+        <input type="email" class="email-input" id="subscriberEmail" placeholder="Enter your email">
+        <button class="subscribe-button" onclick="subscribe()">Subscribe</button>
+      </section>
+    </section>
+    <p>&copy; 2024 Ceylone Wildlife. All rights reserved.</p>
+  </footer>
+</section>
+<script>
+
+  const willpattu ={
+    hed1:'',
+    hed2:'',
+    p1:'',
+    hed3:'',
+    p2:'',
+    hed4:'',
+    p3:'',
+    hed5:'',
+    hed6:'',
+    CrestedSerpentEagle :'',
+    hed7:'',
+    lesserAdjutant:'',
+    hed8:'',
+    malabarPiedHornbill:'',
+    hed9:'',
+    p4:'',
+    hed10:'',
+    p5:''
+
+  };
+
+  fetch('willpattu.json')
+    .then(response => response.json())
+    .then(data=>{
+      willpattu.hed1 = data.hed1;
+      willpattu.hed2 = data.hed2;
+      willpattu.p1 = data.p1;
+      willpattu.hed3 = data.hed3;
+      willpattu.p2 = data.p2;
+      willpattu.hed4 = data.hed4
+      willpattu.p3 = data.p3
+      willpattu.hed5 = data.hed5
+      willpattu.hed6 = data.hed6
+      willpattu.CrestedSerpentEagle = data.CrestedSerpentEagle;
+      willpattu.hed7=data.hed7;
+      willpattu.lesserAdjutant = data.lesserAdjutant;
+      willpattu.hed8 = data.hed8;
+      willpattu.malabarPiedHornbill = data.malabarPiedHornbill;
+      willpattu.hed9 = data.hed9;
+      willpattu.p4 = data.p4;
+      willpattu.hed10= data.hed10
+      willpattu.p5 = data.p5
+
+      localStorage.setItem('wilpattuData', JSON.stringify(wilpattu));
+
+    }
+    )
+
+    .catch(error => console.error('Error fetching data:', error));
+    function subscribe() {
+            const email = document.getElementById("subscriberEmail").value;
+            if (validateEmail(email)) {
+                let subscribedUsers = JSON.parse(localStorage.getItem('subscribedUsers')) || [];
+                subscribedUsers.push(email);   
+                localStorage.setItem('subscribedUsers', JSON.stringify(subscribedUsers)); 
+                alert("Subscription successful!");
+                document.getElementById("subscriberEmail").value = ""; 
+            } else {
+                alert("Please enter a valid email address!");
+            }
+            }
+            
+            function validateEmail(email) {
+            const re = /\S+@\S+\.\S+/;
+            return re.test(email);
+            }
+
+
+
+
+
+</script>
+</body>
+
+
+</html>

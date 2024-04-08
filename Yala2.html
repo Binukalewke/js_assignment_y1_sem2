@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yala National Park</title>
+    <link rel="stylesheet" href="yala.css">
+    <link rel="manifest" href="./manifest/manifest.json">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="//unpkg.com/alpinejs" defer></script>
+
+</head>
+
+<body>
+ <section x-data="yala">
+    <header>
+        <h1>Yala National Park</h1>
+    </header>
+
+    <nav>
+        <a href="index2.html">
+            <img src="./yalaimg/logo.webp" class="logo">
+        </a>
+        <section class="dropdown">
+          <button class="dropbtn">
+              <a href="index2.html">Home</a>
+              </button>
+          <section class="dropdown-content">
+              <a href="SL wildlife2.html">SriLankan wildlife</a>
+              <a href="DOWC2.html">DOWC</a>
+              <a href="SL lepord2.html">SriLankan lepord</a>
+              <a href="animals2.html">SriLankan Animals</a>
+
+          </section>
+      </section>
+      
+          <section class="dropdown">
+              <button class="dropbtn">
+                  <a href="animals2.html">SriLankan Animals</a>
+                  </button>
+              <section class="dropdown-content">
+                  <a href="Yala2.html">yala</a>
+                  <a href="willpattu2.html">wilpattu</a>
+              </section>
+          </section>
+    
+          <a href="about2.html">About</a>
+          <a href="index.html">Log Out</a>
+     
+     
+    
+        
+        
+     </nav>
+
+    <section class="main-section">
+        <section>
+            <img src="./yalaimg/peackok1.webp" alt="Yala Main Image" class="main-image">
+        </section>
+    </section>
+
+    <section class="section">
+        <p x-text="p1"></p>
+    </section>
+
+    
+
+    <section>
+        <h1 x-text="hed1"></h1>
+        <section class="section">
+            <h2 x-text="hed2"></h2>
+            <img src="./yalaimg/fishingcat.png" alt="Yala Image 1" width="100%">
+            
+            <ul >
+                <template x-for="cat in fishingCat">
+                    <li x-text="cat"></li>
+                </template>
+            
+            </ul>
+        </section>
+        <section class="section ">
+            <h2 x-text="hed3"></h2>
+            <img src="./yalaimg/sloth-bear-1.webp" alt="Yala Image 1" width="100%">
+            
+            <ul>
+                <template x-for="bear in slothBear">
+                    <li x-text="bear"></li>
+                </template>
+            
+
+            </ul>
+        </section>
+        <section class="section">
+            <h2 x-text="hed4">Toque Macaque Monkeys</h2>
+            <img src="./yalaimg/toque-macaque-1.jpg" alt="Yala Image 1" width="100%">
+            
+            <ul>
+                <template x-for="monkey in toqueMacaque">
+                    <li x-text="monkey"></li>
+                </template>
+                
+            </ul>
+        </section>
+    </section>
+    <br>
+    <br>
+
+    
+    <h2 x-text="hed5"></h2>
+    <br>
+
+
+<section class="scroll ">
+  <img src="./yalaimg/Garganey1.jpg" alt="Cinque Terre" width="600" height="400">
+  <img src="./yalaimg/Garganey2.webp" alt="Forest" width="600" height="400">
+  <img src="./yalaimg/Garganey3.webp" alt="Northern Lights" width="600" height="400">
+  <img src="./yalaimg/Garganey4.webp" alt="Mountains" width="600" height="400">
+</section>
+
+<br>
+<br>
+
+<h2 x-text="hed6"></h2>
+<br>
+<section class="scroll">
+    <img src="./yalaimg/Wood Pigeon1.jpg" alt="Cinque Terre" width="600" height="400">
+    <img src="./yalaimg/Wood Pigeon2.jpg" alt="Forest" width="600" height="400">
+    <img src="./yalaimg/Wood Pigeon3.jpg" alt="Northern Lights" width="600" height="400">
+    <img src="./yalaimg/Wood Pigeon4.jpg" alt="Mountains" width="600" height="400">
+  </section>
+  <br>
+
+<h2 x-text="hed7"></h2>
+<br>
+
+<section class="scroll">
+    <img src="./yalaimg/Black-winged Stilt1.jpg" alt="Cinque Terre" width="600" height="400">
+    <img src="./yalaimg/Black-winged Stilt2.jpg" alt="Forest" width="600" height="400">
+    <img src="./yalaimg/Black-winged Stilt3.jpg" alt="Northern Lights" width="600" height="400">
+    <img src="./yalaimg/Black-winged Stilt4.jpg" alt="Mountains" width="600" height="400">
+  </section>
+  <br>
+  <br>
+  
+
+    
+    
+
+    <h1 x-text="hed8"></h1> 
+    
+ <section class=" section">
+    <section class="container ">       
+        <section class="container">
+            <img src="./yalaimg/safariyala.jpg" alt="Avatar" class="simage">
+            <section class="middle">
+              <a href="https://www.srilankantours.org/yala-national-park-jeep-safari.html">
+              <section class="text">Book Now</section>
+              </a>  
+            </section>
+        </section>
+        <p x-text="p2"></p>
+    </section>
+ </section>
+ <br>
+ <br>
+
+ <h1 x-text="hed9"></h1>
+ 
+    <section class="section">
+        
+        <img src="./yalaimg/conservation.jpg" alt="Yala Image 3" width="100%">
+        <p x-text="p3"></p>
+        <p x-text="p4"></p>
+        <a href="https://yalaleoparddiary.com/projects/home" > more about conservation initiatives</a>
+        
+    </section>
+
+    <section id="map-container">
+        <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.4544997368457!2d81.46750733488769!3d6.4639613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae5d3a62ffb9359%3A0x3bb623d70b5a3314!2sYala%20National%20Park!5e0!3m2!1sen!2slk!4v1705547489033!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <br>
+    <br>
+
+    <footer class="footer">
+        <section class="footer-container">
+          <section class="footer-social">
+            <ul class="social-icons">
+              <li><a href="#" target="_blank"><i class="fab fa-facebook"></i></a></li>
+              <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+          </section>
+          <section class="footer-links">
+            <ul class="footer-menu">
+                <li><a href="./index2.html">Home</a></li>
+                <li><a href="./SL wildlife2.html.html">SriLankan Wildlife</a></li>
+                <li><a href="./animals2.html">SriLankan Animals</a></li>
+                <li><a href="./SL lepord2.html.html">SriLankan Leopard</a></li>
+                <li><a href="./about2.html">About</a></li>
+              <li><a href="./login.html">Log in</a></li>
+              <li><a href="./signup.html">Sign Up</a></li>
+            </ul>
+          </section>
+          <section class="footer-subscribe">
+            <input type="email" class="email-input" id="subscriberEmail" placeholder="Enter your email">
+            <button class="subscribe-button" onclick="subscribe()">Subscribe</button>
+          </section>
+        </section>
+        <p>&copy; 2024 Ceylone Wildlife. All rights reserved.</p>
+      </footer>
+
+<section  class="popup" id="popup">
+<section  class="popup-content">
+  <span class="close-button" onclick="closePopup()">×</span>
+  <h2>Edit Content</h2>
+  <ul id="headingsList"></ul>
+  <ul id="paragraphsList"></ul>
+  <button onclick="saveChanges()">Save Changes</button> 
+</section >
+</section >
+
+<button onclick="openPopup()" style="position: fixed; bottom: 20px; right: 20px;">Edit</button>
+
+ </section>
+ <script>
+    const yala={
+        p1:'',
+        hed1:'',
+        hed2:'',
+        fishingCat:'',
+        hed3:'',
+        slothBear:'',
+        hed4:'',
+        toqueMacaque:'',
+        hed5:'',
+        hed6:'',
+        hed7:'',
+        hed8:'',
+        p2:'',
+        hed9:'',
+        p3:'',
+        p4:''
+
+    };
+
+    fetch('yala.json')
+        .then(response=>response.json())
+        .then(data=>{
+            yala.p1 = data.p1
+            yala.hed1 = data.hed1
+            yala.hed2 = data.hed2
+            yala.fishingCat = data.fishingCat
+            yala.hed3 = data.hed3
+            yala.slothBear = data.slothBear
+            yala.hed4 = data.hed4
+            yala.toqueMacaque = data.toqueMacaque
+            yala. hed5 = data.hed5
+            yala.hed6 = data.hed6
+            yala.hed7 = data.hed7
+            yala.hed8 = data.hed8
+            yala.p2 = data.p2
+            yala.hed9 = data.hed9
+            yala.p3 = data.p3
+            yala.p4 = data.p4
+        })
+
+        function openPopup() {
+    var popup = document.getElementById("popup");
+    popup.style.display = "block";
+
+    
+    var headingsList = document.getElementById("headingsList");
+    var headings = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+    headings.forEach(function (heading) {
+        var li = document.createElement("li");
+        var editableHeading = document.createElement("div");
+        editableHeading.contentEditable = true;
+        editableHeading.textContent = heading.textContent;
+        li.appendChild(editableHeading);
+        headingsList.appendChild(li);
+    });
+
+    
+    var paragraphsList = document.getElementById("paragraphsList");
+    var paragraphs = document.querySelectorAll("p");
+    paragraphs.forEach(function (paragraph) {
+        var li = document.createElement("li");
+        var editableParagraph = document.createElement("div");
+        editableParagraph.contentEditable = true;
+        editableParagraph.textContent = paragraph.textContent;
+        li.appendChild(editableParagraph);
+        paragraphsList.appendChild(li);
+    });
+}
+
+function closePopup() {
+    var popup = document.getElementById("popup");
+    popup.style.display = "none";
+
+  
+    document.getElementById("headingsList").innerHTML = "";
+    document.getElementById("paragraphsList").innerHTML = "";
+}
+
+function saveChanges() {
+    
+    var editedHeadings = document.querySelectorAll("#headingsList div");
+    var headings = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+    editedHeadings.forEach(function (editedHeading, SLwildlife) {
+        headings[SLwildlife].textContent = editedHeading.textContent;
+    });
+
+    var editedParagraphs = document.querySelectorAll("#paragraphsList div");
+    var paragraphs = document.querySelectorAll("p");
+    editedParagraphs.forEach(function (editedParagraph, animals) {
+        paragraphs[SLwildlife].textContent = editedParagraph.textContent;
+    });
+
+    
+    closePopup();
+}
+
+ 
+  function subscribe() {
+            const email = document.getElementById("subscriberEmail").value;
+            if (validateEmail(email)) {
+                let subscribedUsers = JSON.parse(localStorage.getItem('subscribedUsers')) || [];
+                subscribedUsers.push(email);   
+                localStorage.setItem('subscribedUsers', JSON.stringify(subscribedUsers)); 
+                alert("Subscription successful!");
+                document.getElementById("subscriberEmail").value = "";
+            } else {
+                alert("Please enter a valid email address!");
+            }
+            }
+            
+            function validateEmail(email) {
+            const re = /\S+@\S+\.\S+/;
+            return re.test(email);
+            }
+ </script>
+</body>
+
+</html>

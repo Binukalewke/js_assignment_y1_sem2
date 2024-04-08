@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ceylone Wildlife</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="manifest" href="./manifest/manifest.json">
+  <script src="//unpkg.com/alpinejs" defer></script>
+
+  
+</head>
+
+<body>
+  <section x-data="index">
+    <nav>
+      <a href="index.html">
+        <img src="./indeximg/logo.webp" class="logo">
+      </a>
+
+      <section class="dropdown">
+        <button class="dropbtn">
+          <a href="index2.html">Home</a>
+        </button>
+        <section class="dropdown-content">
+          <a href="SL wildlife2.html">SriLankan wildlife</a>
+          <a href="DOWC2.html">DOWC</a>
+          <a href="SL lepord2.html">SriLankan lepord</a>
+          <a href="animals2.html">SriLankan Animals</a>
+        </section>
+      </section>
+
+      <section class="dropdown">
+        <button class="dropbtn">
+          <a href="animals2.html">SriLankan Animals</a>
+        </button>
+        <section class="dropdown-content">
+          <a href="Yala.html">yala</a>
+          <a href="willpattu.html">wilpattu</a>
+        </section>
+      </section>
+
+      <a href="about.html">About</a>
+      <a href="index.html">Log Out</a>
+    </nav>
+
+    <section>
+      <img src="./indeximg/main.jpg" alt="Main Image" class="main-image">
+    </section>
+
+    <section class="section">
+      <p x-text="p1"></p>
+    </section>
+
+    <section class="container section ">
+      <section class="content">
+        <h1>National Parks to Visit</h1>
+      </section>
+      <section class="images ">
+        <section class="image-container ">
+          <img class="image" src="./indeximg/yala_nationalpark_1.jpg" alt="Image 1">
+          <section class="overlay ">
+            <a href="Yala.html">Yala</a>
+          </section>
+        </section>
+        <section class="image-container ">
+          <img class="image" src="./indeximg/willpattu 2.JPG" alt="Image 2">
+          <section class="overlay ">
+            <a href="willpattu.html">Wilpattu</a>
+          </section>
+        </section>
+      </section>
+    </section>
+
+    <h1 x-text="introThingsToDo"></h1>
+      <section class="section">
+        
+          <h1>Safaris</h1>
+          <br>
+          <section class="gallery-container">
+            <section class="gallery">
+              <img src="./indeximg/kaudulla.jpg" alt="kaudulla">
+              <a href="https://kaudullasafari.com/" class="gallery-text">Kaudulla National Park</a>
+            </section>
+
+            <section class="gallery">
+              <img src="./indeximg/Udawalawe.jpg" alt="Udawalawe">
+              <a href="https://www.tripadvisor.com/Attractions-g674587-Activities-c61-t243-Udawalawe_National_Park.html"
+                class="gallery-text">Udawalawe National Park</a>
+            </section>
+
+            <section class="gallery">
+              <img src="./indeximg/Wasgamuwa.jpg" alt="Wasgamuwa">
+              <a href="https://lk.lakpura.com/products/kala-wewa-national-park-private-safari" class="gallery-text">kalawewa
+                National Park </a>
+            </section>
+      </section>
+
+        <p x-text="introSafarisPara"></p>
+
+
+        <h1>Bird watching</h1>
+        <br>
+        <section class="gallery-container">
+          <section class="gallery">
+            <img src="./indeximg/Bundala.jpg" alt="Bird">
+            <a href="https://www.tripadvisor.com/Attraction_Review-g12157733-d2236362-Reviews-Bundala_National_Park-Weligatta_Southern_Province.html"
+              class="gallery-text">Bundala National Park
+            </a>
+          </section>
+
+          <section class="gallery">
+            <img src="./indeximg/bird1.jpg" alt="Bird">
+            <a href="https://www.srilankansafari.com/bird-watching-anawilundawa-bird-sanctuary.php"
+              class="gallery-text">Anawilundawa Bird Sanctuary</a>
+          </section>
+
+          <section class="gallery">
+            <img src="./indeximg/bird2.jpg" alt="Bird">
+            <a href="https://www.srilankansafari.com/bird-watching-in-talangama-wetland.php" class="gallery-text">
+              Talangama Wetland </a>
+          </section>
+        </section>
+        <p x-text="introBirdWatchingPara"></p>
+        <br>
+        <br>
+
+       <h1> Boat Rides & Cruises</h1>
+        <br>
+        <section class="gallery-container">
+          <section class="gallery">
+            <img src="./indeximg/bentota.webp" alt="Bentota">
+            <a href="https://www.tripadvisor.com/AttractionProductReview-g612380-d15041501-Bentota_River_Safari-Weligama_Matara_Southern_Province.html"
+              class="gallery-text">Bentota River Safari</a>
+          </section>
+
+          <section class="gallery">
+            <img src="./indeximg/boat.jpg" alt="Madu River">
+            <a href="https://www.tripadvisor.com/AttractionProductReview-g608521-d19954655-Madu_River_Boat_Safari_Balapitiya-Ahungalla_Galle_District_Southern_Province.html  "
+              class="gallery-text">Madu River Boat Safari Balapitiya</a>
+          </section>
+
+          <section class="gallery">
+            <img src="./indeximg/whale.png" alt="whale and dolphins">
+            <a href="https://www.tripadvisor.com/AttractionProductReview-g1407334-d15885193-Whales_and_Dolphins_Watching_Luxury_Super_Grade_Cruiser_Hotel_Pick_up_offered-Mir.html    "
+              class="gallery-text"> Whales and Dolphins Watching </a>
+          </section>
+
+        </section>
+        <p x-text="introBoatRidesPara"></p>
+
+      </section>
+    
+
+    <section class="section">
+      <h1 x-text="introBiodiversity"></h1>
+      <br>
+      <ul>
+        <li>
+          <h3 x-text="introSinharajaHead"></h3>
+        </li>
+      </ul>
+      <img src="./indeximg/s1.jpg" alt="Sinharaja image" height="80px" width="1100">
+      <p id="introSinharajaPara"></p>
+
+    </section>
+
+    <h1 x-text="introConserHead"></h1>
+    <section class=" section">
+      <section class="container ">
+        <section class="container">
+          <img src="./indeximg/conse.jpg" alt="Avatar" class="simage">
+          <section class="middle">
+            <a href="https://www.slwcs.org/">
+              <section class="text">Click For More</section>
+            </a>
+          </section>
+        </section>
+        <p x-text="introConserPara"></p>
+      </section>
+    </section>
+
+    <footer class="footer">
+      <section class="footer-container">
+        <section class="footer-social">
+          <ul class="social-icons">
+            <li><a href="#" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+          </ul>
+        </section>
+        <section class="footer-links">
+          <ul class="footer-menu">
+            li><a href="./index2.html">Home</a></li>
+            <li><a href="./SL wildlife2.html.html">SriLankan Wildlife</a></li>
+            <li><a href="./animals2.html">SriLankan Animals</a></li>
+            <li><a href="./SL lepord2.html.html">SriLankan Leopard</a></li>
+            <li><a href="./about2.html">About</a></li>
+          <li><a href="./login.html">Log in</a></li>
+          <li><a href="./signup.html">Sign Up</a></li>
+          </ul>
+        </section>
+        <section class="footer-subscribe">
+          <input type="email" class="email-input" id="subscriberEmail" placeholder="Enter your email">
+          <button class="subscribe-button" onclick="subscribe()">Subscribe</button>
+        </section>
+      </section>
+      <p>&copy; 2024 Ceylone Wildlife. All rights reserved.</p>
+    </footer>
+  
+  </section>
+
+  
+  <section class="popup" id="popup">
+    <section class="popup-content">
+      <span class="close-button" onclick="closePopup()">×</span>
+      <h2>Edit Content</h2>
+      <ul id="headingsList"></ul>
+      <ul id="paragraphsList"></ul>
+      <button onclick="saveChanges()">Save Changes</button> 
+    </section>
+  </section>
+
+  <button onclick="openPopup()" style="position: fixed; bottom: 20px; right: 20px;">Edit</button>
+
+  <script>
+    const index = {
+      p1: '',
+      introThingsToDo: '',
+      introSafarisPara: '',
+      introBirdWatchingPara: '',
+      introBoatRidesPara: '',
+      introBiodiversity: '',
+      introSinharajaHead: '',
+      introSinharajaPara: '',
+      introConserHead: '',
+      introConserPara: ''
+    };
+
+    fetch('index.json')
+      .then(Response => Response.json())
+      .then(data => {
+        index.p1 = data.p1
+        index.introThingsToDo = data.introThingsToDo
+        index.introSafarisPara = data.introSafarisPara
+        index.introBirdWatchingPara = data.introBirdWatchingPara
+        index.introBoatRidesPara = data.introBoatRidesPara
+        index.introBiodiversity = data.introBiodiversity
+        index.introSinharajaHead = data.introSinharajaHead
+        index.introSinharajaPara = data.introsinharajapara
+        index.introConserHead = data.introConserHead
+        index.introConserPara = data.introConserPara
+
+        
+        localStorage.setItem('indexData', JSON.stringify(index));
+      })
+      .catch(error => console.error('Error fetching data:', error));
+
+    function openPopup() {
+      var popup = document.getElementById("popup");
+      popup.style.display = "block";
+
+      
+      var headingsList = document.getElementById("headingsList");
+      var headings = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+      headings.forEach(function (heading) {
+        var li = document.createElement("li");
+        var editableHeading = document.createElement("div");
+        editableHeading.contentEditable = true;
+        editableHeading.textContent = heading.textContent;
+        li.appendChild(editableHeading);
+        headingsList.appendChild(li);
+      });
+
+      
+      var paragraphsList = document.getElementById("paragraphsList");
+      var paragraphs = document.querySelectorAll("p");
+      paragraphs.forEach(function (paragraph) {
+        var li = document.createElement("li");
+        var editableParagraph = document.createElement("div");
+        editableParagraph.contentEditable = true;
+        editableParagraph.textContent = paragraph.textContent;
+        li.appendChild(editableParagraph);
+        paragraphsList.appendChild(li);
+      });
+    }
+
+    function closePopup() {
+      var popup = document.getElementById("popup");
+      popup.style.display = "none";
+
+      
+      document.getElementById("headingsList").innerHTML = "";
+      document.getElementById("paragraphsList").innerHTML = "";
+    }
+
+    function saveChanges() {
+      
+      var editedHeadings = document.querySelectorAll("#headingsList div");
+      var headings = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+      editedHeadings.forEach(function (editedHeading, index) {
+        headings[index].textContent = editedHeading.textContent;
+      });
+
+      var editedParagraphs = document.querySelectorAll("#paragraphsList div");
+      var paragraphs = document.querySelectorAll("p");
+      editedParagraphs.forEach(function (editedParagraph, index) {
+        paragraphs[index].textContent = editedParagraph.textContent;
+      });
+
+     
+      closePopup();
+    }
+
+
+     
+   
+   function subscribe() {
+            const email = document.getElementById("subscriberEmail").value;
+            if (validateEmail(email)) {
+                let subscribedUsers = JSON.parse(localStorage.getItem('subscribedUsers')) || [];
+                subscribedUsers.push(email);   
+                localStorage.setItem('subscribedUsers', JSON.stringify(subscribedUsers)); 
+                alert("Subscription successful!");
+                document.getElementById("subscriberEmail").value = ""; 
+            } else {
+                alert("Please enter a valid email address!");
+            }
+            }
+           
+            function validateEmail(email) {
+            const re = /\S+@\S+\.\S+/;
+            return re.test(email);
+            }
+  </script>
+
+</body>
+
+</html>

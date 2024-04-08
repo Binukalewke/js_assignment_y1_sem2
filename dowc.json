@@ -1,0 +1,36 @@
+{
+    "int":"Introduction",
+    "p1":"The Department of Wildlife Conservation in Sri Lanka serves as a pivotal institution dedicated to the preservation and sustainable management of the country's diverse ecosystems and wildlife. With a mission to safeguard biodiversity and maintain the ecological balance, the department oversees the protection of national parks, wildlife sanctuaries, and other vital habitats. Through law enforcement, research initiatives, and community engagement, the department strives to combat threats such as poaching and illegal trade, while also promoting public awareness and responsible eco-tourism. By undertaking these multifaceted responsibilities, the Department of Wildlife Conservation plays a crucial role in ensuring the longevity and well-being of Sri Lanka's unique and precious wildlife.",
+    "pa":"Protected Areas",
+    "pa1":"Trinconamadu",
+    "p2":"Trincomalee, also known as Trinconamadu, is home to a significant protected area in Sri Lanka, encompassing diverse ecosystems such as dry evergreen forests and wetlands. This region harbors a rich biodiversity, including endemic species of flora and fauna. The Trinconamadu Protected Area plays a crucial role in conservation efforts, preserving the natural beauty and ecological balance of this unique part of Sri Lanka.     ",
+    "pa2":"Galoya National Park",
+    "p3":"Gal Oya National Park, located in Sri Lanka, is a vital conservation area spanning 25,900 hectares. Established in 1954, it is renowned for its diverse ecosystems, including evergreen forests, savannas, and the largest reservoir in the country, Senanayake Samudraya. The park plays a crucial role in preserving the rich biodiversity of the region, home to numerous species, including elephants, leopards, and various endemic birds."    ,
+    "pa3":"Hikkaduwa Coral Sanctuary",
+    "p4":"Hikkaduwa Coral Sanctuary, situated along the southwestern coast of Sri Lanka, is a marine protected area renowned for its vibrant coral reefs. Established to conserve the diverse marine life, the sanctuary is home to a plethora of coral species, colorful fish, and other marine organisms. Popular among snorkelers and divers, it offers a captivating glimpse into the underwater world, contributing to both conservation and ecotourism efforts.    ",
+    "sanctuaries":[
+        "Anuradhapura",
+        "Budhangala",
+        "Dahaiyagala",
+        "Eluwilayaya",
+        "Kataragama",
+        "Kudumbigala-Panama"
+    ],
+    "natureReserves":[
+        "Triconamadu",
+        "Riverine",
+        "Wetahirakanda",
+        "Peak Wilderness",
+        "Nagar kovil",
+        "Vidataltivu"
+    ],
+    "nationalParks":[
+        "Adam’s Bridge",
+        "Bundala",
+        "Delft",
+        "Kaudulla",
+        "Lunugamvehera",
+        "Maduru Oya"
+    ]
+    
+}
