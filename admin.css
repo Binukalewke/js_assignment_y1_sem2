@@ -49,6 +49,18 @@ table th {
     }
 }
 
+@media screen and (max-width: 768px) {
+    table th, table td {
+        padding: 8px; /* Adjust padding for smaller screens */
+    }
+}
+
+@media screen and (max-width: 576px) {
+    table th, table td {
+        padding: 5px; /* Further adjust padding for even smaller screens */
+        font-size: 12px; /* Adjust font size */
+    }
+}
 .logo {
     width: 100%;
     max-width: 200px; 
